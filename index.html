@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Porcentagem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "inter", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <section id="calculadora">
-        <form action="">
+<body class="bg-yellow-300">
+    <section id="calculadora" class="flex justify-center items-center h-screen">
+        <form action="" class="w-full max-w-md bg-purple-400 shadow-2xl">
             <fieldset>
-                <legend>Calculadora de Porcentagem</legend>
+                <legend class="p-8 bg-purple-700 text-white w-full text-4xl">Calculadora de Porcentagem</legend>
                 <div>
                     <label for="">Valor</label>
                     <input type="text" name="" id="" placeholder="Informe o valor">
