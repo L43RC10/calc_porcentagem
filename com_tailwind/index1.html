@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Porcentagem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "inter", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-yellow-300">
+    <section id="calculadora" class="flex justify-center items-center h-screen">
+        <form action="" class="w-full max-w-md bg-purple-400 shadow-2xl">
+            <fieldset>
+                <legend class="p-8 bg-purple-700 text-white w-full text-4xl">Calculadora de Porcentagem</legend>
+                <div class="m-8 mb-0">
+                    <label for="valor" class="block text-white mb-2">Valor</label>
+                    <input type="text" name="" id="valor" placeholder="Informe o valor" class="p-3 w-full outline-none">
+                </div>
+                <div class="m-8 mb-0">
+                    <label for="porcentagem" class="block text-white mb-2">Porcentagem</label>
+                    <input type="text" name="" id="porcentagem" placeholder="Informe oa porcentagem" class="p-3 w-full outline-none">
+                </div>
+                <div class="m-8 mb-0">
+                    <button class="bg-purple-700 text-yellow-300 p-3 uppercase w-full font-medium" id="btn_calculate">Calcular Porcentagem</button>
+                </div>
+                <div class="m-8">
+                    <p class="bg-yellow-200 p-3 text-purple-700 font-medium" id="resposta">10% de R$ 1.500,00 é R$ 150,00. A soma do valor mais a porcentagem é R$1.650,00</p>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <script>
+        const valor = document.getElementById("valor");
+        const porcentagem = document.getElementById("porcentagem");
+        const btn_calculate = document.getElementById("btn_calculate");
+        const resposta = document.getElementById("resposta");
+    </script>
+</body>
+</html>

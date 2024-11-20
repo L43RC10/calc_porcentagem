@@ -4,32 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Porcentagem</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <style>
         *{
-            font-family: "inter", sans-serif;
+            font: 16px "inter", sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: none;
         }
+
+        body {
+            background-color: #333;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        form {
+            width: 100%;
+            max-width: 28rem;
+            background-color: orangered;
+        }
+
+        legend {
+            padding: 32px;
+            background: orange;
+            color: #fff;
+            width: 100%;
+            font-size: 36px;
+        }
+
+        div {
+            margin: 2rem;
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 12px;
+            width: 100%;
+            outline: none;
+        }
+
+        button {
+            background-color: orange;
+            color: orangered;
+            cursor: pointer;
+            font-weight: 500;
+            text-transform: uppercase;
+            width: 100%;
+            padding: 12px;
+        }
+
+        p {
+            padding: 12px;
+            font-weight: 500;
+            text-align: center;
+            background-color: orange;
+            color: orangered;
+        }
+
     </style>
 </head>
-<body class="bg-yellow-300">
-    <section id="calculadora" class="flex justify-center items-center h-screen">
-        <form action="" class="w-full max-w-md bg-purple-400 shadow-2xl">
+<body>
+    <section id="calculadora">
+        <form action="">
             <fieldset>
-                <legend class="p-8 bg-purple-700 text-white w-full text-4xl">Calculadora de Porcentagem</legend>
-                <div class="m-8 mb-0">
-                    <label for="valor" class="block text-white mb-2">Valor</label>
-                    <input type="text" name="" id="valor" placeholder="Informe o valor" class="p-3 w-full outline-none">
+                <legend>Calculadora de Porcentagem</legend>
+                <div>
+                    <label for="valor">Valor</label>
+                    <input type="text" name="" id="valor" placeholder="Informe o valor">
                 </div>
-                <div class="m-8 mb-0">
-                    <label for="porcentagem" class="block text-white mb-2">Porcentagem</label>
-                    <input type="text" name="" id="porcentagem" placeholder="Informe oa porcentagem" class="p-3 w-full outline-none">
+                <div>
+                    <label for="porcentagem">Porcentagem</label>
+                    <input type="text" name="" id="porcentagem" placeholder="Informe oa porcentagem">
                 </div>
-                <div class="m-8 mb-0">
-                    <button class="bg-purple-700 text-yellow-300 p-3 uppercase w-full font-medium" id="btn_calculate">Calcular Porcentagem</button>
+                <div>
+                    <button id="btn_calculate">Calcular Porcentagem</button>
                 </div>
-                <div class="m-8">
-                    <p class="bg-yellow-200 p-3 text-purple-700 font-medium" id="resposta">10% de R$ 1.500,00 é R$ 150,00. A soma do valor mais a porcentagem é R$1.650,00</p>
+                <div style="margin-bottom: 2rem;">
+                    <p id="resposta">10% de R$ 1.500,00 é R$ 150,00. A soma do valor mais a porcentagem é R$1.650,00</p>
                 </div>
             </fieldset>
         </form>
