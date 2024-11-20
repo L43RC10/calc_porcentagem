@@ -14,8 +14,19 @@
             border: none;
         }
 
+        .pallete {
+            color: #9ba37b;
+            color: #394823;
+            color: #70865e;
+            color: #989f40;
+            color: #ede1b5;
+
+            color: #19270d;
+            color: #818c3c;
+        }
+
         body {
-            background-color: #333;
+            background-color: #394823;
         }
 
         section {
@@ -29,14 +40,14 @@
         form {
             width: 100%;
             max-width: 28rem;
-            background-color: orangered;
+            background-color: #19270d;
         }
 
         legend {
             /* padding: 32px; */
             padding: 2rem;
-            background: orange;
-            color: #fff;
+            background: #818c3c;
+            color: #ede1b5;
             width: 100%;
             font-size: 36px;
         }
@@ -48,7 +59,7 @@
 
         label {
             display: block;
-            color: #fff;
+            color: #ede1b5;
             margin-bottom: 0.5rem;
         }
 
@@ -56,24 +67,31 @@
             padding: 12px;
             width: 100%;
             outline: none;
+            background-color: #ede1b5;
+            color: #394823;
         }
 
         button {
-            background-color: orange;
-            color: orangered;
+            background-color: #818c3c;
+            color: #394823;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: bold;
             text-transform: uppercase;
             width: 100%;
             padding: 12px;
+            transition: all .5s;
+        }
+
+        button:hover {
+            background-color: #70865e;
         }
 
         p {
             padding: 12px;
-            font-weight: 500;
+            font-weight: bold;
             text-align: center;
-            background-color: orange;
-            color: orangered;
+            background-color: #818c3c;
+            color: #394823;
         }
 
     </style>
@@ -89,7 +107,7 @@
                 </div>
                 <div>
                     <label for="porcentagem">Porcentagem</label>
-                    <input type="text" name="" id="porcentagem" placeholder="Informe oa porcentagem">
+                    <input type="text" name="" id="porcentagem" placeholder="Informe a porcentagem">
                 </div>
                 <div>
                     <button id="btn_calculate">Calcular Porcentagem</button>
