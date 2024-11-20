@@ -42,6 +42,7 @@ legend {
     color: #ede1b5;
     width: 100%;
     font-size: 36px;
+    text-align: center;
 }
 
 div {
@@ -79,6 +80,7 @@ button:hover {
 }
 
 p {
+    transition: all 5.s;
     padding: 12px;
     font-weight: bold;
     text-align: center;
