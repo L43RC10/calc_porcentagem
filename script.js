@@ -39,3 +39,36 @@ btnLimpar.addEventListener('click', (e) => {
     resposta.style.display = 'none';
     elValor.focus();
 });
+
+
+
+
+// INICIO MASCARA INPUT_REAIS
+const input = document.getElementById("valor");
+
+input.addEventListener("input", function () {
+    let value = input.value.replace(/\D/g, ""); // Remove tudo que n�o for n�mero
+    if (value === "") {
+        input.value = "";
+        return;
+    }
+
+    // Divide por 100 para obter centavos e formata com separadores
+    value = (parseInt(value) / 100).toFixed(2);
+    value = value.replace(".", ","); // Troca ponto por v�rgula
+
+    // Adiciona separadores de milhar
+    value = value.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+    input.value = "R$ " + value; // Adiciona o s�mbolo do real
+});
+
+input.addEventListener("focus", function () {
+    if (input.value === "") input.value = "R$ 0,00";
+});
+
+input.addEventListener("blur", function () {
+    if (input.value === "R$ 0,00") input.value = ""; // Limpa se vazio
+});
+
+// FIM MASCARA INPUT_REAIS
